@@ -79,7 +79,80 @@ section{
     height: auto;
     
 }
+.mobile-nav ul{
+    padding: 35px;
+    margin: 2%;
+}
+.mobile-nav img{
+    padding: 2%;
+    margin: 8%;
+}
+.mobile-nav li {
+    margin: 3% 0;
+}
+.mobile-nav li a{
+    text-transform: capitalize;
+    font-size: var(--font-h4-25);
+    color: var(---white);
+    font-weight: 500;
+    margin-top:25px;
+    cursor: pointer;
+}
+.mobile-nav li a:hover{
+    color: var(---red);
+
+}
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-social{
+    display: flex;
+    margin-left: 30px;
+}
+.mobile-nav-social a{
+    padding:2px 5px;
+    margin: 3%;
+    font-size: 20px;
+    background-color: var(---yellow-color);
+    border-radius: 100%;
+    font-size: var(--font-30);
+    color: var(---white);
+}
+.mobile-nav-social a:hover{
+    color: #fd307a;
+    background-color: #00000080;
+}
+
+.mobile-nav-social i{
+    color: var(---black-color);
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: var(---red);
+    opacity: 0.8;
+    background-color: #0000001f;
+    font-size: var(--font-37);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5%;
+    
+}
+.menu-icon .open:hover{
+    transform: scale(1.1);
+    
+    
+}
+
+
 /* =============================================================  */
+header{
+    max-width: 100%;
+    margin: 0 auto;
+}
 .head{
     background: url(img/hero-bg-01.jpg);
     background-attachment: fixed;
@@ -93,6 +166,44 @@ section{
     
 }
 .head::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+}
+.projectHTML-head{
+    background: url(img/bg_04\ \(1\).jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.projectHTML-head::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+}
+.aboutHTML-head{
+    background: url(img/bg_05.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+.aboutHTML-head::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -157,7 +268,7 @@ nav .logo img{
 }
 .hero-content{
     margin-top: 12%;
-    width: 300px;
+    width: 600px;
 }
 .hero-content h6{
     font-size: var(--font-14);
@@ -165,6 +276,9 @@ nav .logo img{
     color: var(---white);
     margin-bottom: 35px;
     letter-spacing: 3px;
+}
+.hero-content h3{
+    font-size: var(--font-h4-25);
 }
 .hero-content h1{
     font-size: var(--font-h1-100);
@@ -538,6 +652,42 @@ hr{
     line-height: 25px;
     
 }
+.logo-img img{
+    max-width: 100%;
+    height: auto;
+ }
+ .logo-img{
+    white-space: nowrap;
+    animation: 10s slider1 infinite linear;
+ }
+ .logo-img2{
+    white-space: nowrap;
+    animation:  30s slider2 infinite linear;
+ }
+ #logo-img-slide{
+    overflow: hidden;
+    padding: 4% 12%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: transparent;
+ }
+ @keyframes slider1{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+ }
+ @keyframes slider2{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+ }
+ 
 /* -----------------------------------------------------------------  */
 #end{
     background: url(img/bg_03.jpg);
@@ -549,12 +699,9 @@ hr{
     width: 100%;
     position: relative;
     padding: 3% 0;
-    margin: 3% 0;
-    
-    
-    
-    
+    margin: 3% 0; 
 }
+
 #end::after{
     content: '';
     position: absolute;
@@ -667,4 +814,341 @@ footer{
 .footer-text{
     color: var(---p-text);
     padding: 5px 0;
+}
+
+/* ====================================PROJECT HTML ================================= */
+#home-body-project{
+    max-width: 100%;
+    height: auto;
+
+}
+
+#home-body-project .project-bg-1, 
+#home-body-project .project-bg-2,
+#home-body-project .project-bg-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin:  0 auto;
+    position: relative;
+
+}
+
+.project-bg-1 img, 
+.project-bg-2 img,
+.project-bg-3 img{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    object-fit: cover; 
+    opacity: 0.3;
+
+  
+}
+.project-bg-1 img::after, 
+.project-bg-2 img::after,
+.project-bg-3 img::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, #000103, rgba(0, 0, 0, 0.993));
+    
+    
+}
+.project-bg-content{
+    position: absolute;
+    max-width: 100%;
+    margin:  0 auto;
+    padding: 0 10%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    top: 80%;
+    left: 0;
+    margin-top: 10%;
+    align-items: center;
+    justify-content:center ;
+    z-index: 1;
+
+}
+.project-bg-content2{
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    margin:  0 auto;
+    padding: 0 10%;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    gap: 50px;
+    z-index: 1;
+    top: 230%;
+    
+
+
+}
+.project-bg-content2{
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    margin:  0 auto;
+    padding: 0 10%;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    gap: 50px;
+    z-index: 1;
+    top: 230%;
+
+}
+.project-bg-content3{
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    margin:  0 auto;
+    padding: 0 10%;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    gap: 50px;
+    z-index: 1;
+    top: 360%;
+
+}
+.project-bg-content .project-content-text{
+    max-width: 40%;
+    height: auto;
+    
+}
+.project-content-text h2{
+    font-size: var(--font-h2-55);
+    margin-bottom: 25px;
+    
+}
+.project-content-text h2 a:hover{
+    color: var(---p-text);
+}
+.project-content-text h2 a{
+    font-family: "Zen Dots", sans-serif;
+    text-transform: capitalize;
+    color: var(---white);
+    font-weight: 600;
+    cursor: pointer;
+}
+.project-content-text .text{
+    font-size: var(--font-16);
+    font-weight: 600;
+    color: var(---p-text);
+    text-align: justify;
+    line-height: 25px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.project-content-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.project-content-div .types{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.types h6{
+    font-size: var(--font-h6);
+    color: var(---red);
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    
+}
+.types i{
+    padding: 0 5px;
+}
+.types p{
+   
+   
+    margin-top: -15px;
+    text-align: left;
+    font-size: var(--font-14);
+    color: var(---p-text);
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 100%;
+   
+}
+.types p:hover{
+    color: var(---white);
+
+}
+.types ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.project-bg-content img, 
+.project-bg-content2 img,
+.project-bg-content3 img{
+    max-width: 70%;
+    height: 450px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    
+    
+}
+.project-bg-content img:hover,
+.project-bg-content2 img:hover,
+.project-bg-content3 img:hover{
+    transform: scale(1.01);
+}
+
+
+#end-project{
+    background: url(img/bg_01.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 67vh;
+    width: 100%;
+    position: relative;
+    padding: 3% 0;
+    margin: 3% 0; 
+
+}
+#end-project::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom,#293445,#293445d5);
+}
+/* =============================================aboutHTML=============================== */
+
+#about-platform{
+    max-width: 100%;
+    height: 230vh;
+    background: url(img/bg_01.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+#about-platform::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to top,#293445,#29344562);
+    
+    
+}
+#about-platform img{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    max-width: 90%;
+    margin:  0 auto;
+    transform: translate(-50%, -50%);
+   z-index: 1;
+}
+.about-platform-content{
+    margin-top: 55%;
+    width: 100%;
+    padding: auto 40%;
+    position: relative;
+    z-index: 1;
+    
+    
+
+}
+.about-platform-content h6{
+    font-size: var(--font-h6);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: var(---white);
+    text-transform: capitalize;
+}
+.about-platform-content h2{
+    font-size: var(--font-h2-55);
+    font-weight: 500;
+    color: var(---white);
+    opacity: 0.9;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+.about-platform-content h4{
+    font-size: var(--font-h4-25);
+    font-weight: 600;
+    color: var(---white);
+    margin-bottom: 40px;
+}
+.about-platform-content p{
+    font-size: var(--font-16);
+    font-weight: 600;
+    color: var(---p-text);
+    line-height: 25px;
+}
+#gaming-fact{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg_04.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#gaming-fact::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.486));
+}
+.gaming-fact-content{
+    margin: 10% 0;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.gaming-fact-content h2{
+    font-size: var(--font-h2-55);
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: var(---white);
+
+}
+.gaming-fact-content p{
+    width: 75%;
+    font-size: var(--font-16);
+    font-weight: 600;
+    color: var(---p-text);
+    line-height: 25px;
 }
