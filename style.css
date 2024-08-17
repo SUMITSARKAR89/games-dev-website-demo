@@ -212,6 +212,26 @@ header{
     left: 0;
     background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
 }
+.contactHTML-head{
+    background: url(img/bg_03.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+}
+.contactHTML-head::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -1032,6 +1052,29 @@ footer{
     margin: 3% 0; 
 
 }
+#end-about{
+    background: url(img/cta-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 67vh;
+    width: 100%;
+    position: relative;
+    padding: 3% 0;
+    margin: 3% 0; 
+
+}
+#end-about::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.39), rgba(0,0,0,0.8));
+
+}
 #end-project::after{
     content: '';
     position: absolute;
@@ -1075,7 +1118,8 @@ footer{
     transform: translate(-50%, -50%);
    z-index: 1;
 }
-.about-platform-content{
+.about-platform-content, 
+.mision-vision-content{
     margin-top: 55%;
     width: 100%;
     padding: auto 40%;
@@ -1085,7 +1129,8 @@ footer{
     
 
 }
-.about-platform-content h6{
+.about-platform-content h6, 
+.mision-vision-content h6{
     font-size: var(--font-h6);
     font-weight: 700;
     letter-spacing: 2px;
@@ -1093,7 +1138,8 @@ footer{
     color: var(---white);
     text-transform: capitalize;
 }
-.about-platform-content h2{
+.about-platform-content h2, 
+.mision-vision-content h2{
     font-size: var(--font-h2-55);
     font-weight: 500;
     color: var(---white);
@@ -1152,3 +1198,173 @@ footer{
     color: var(---p-text);
     line-height: 25px;
 }
+.conatiner-img{
+    max-width: 100%;
+    margin:0 auto;
+    padding: 0 3%;
+    opacity: 0.6;
+}
+#mission-vision{
+    padding: 2% 5%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.mision-vision-content{
+    margin-top: 5%;
+}
+.mision-vision-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 8% 0 5%;
+    width: 100%;
+}
+.mision-vision-card{
+    width: 100%;
+}
+.mision-vision-card h4{
+    font-size: var(--font-h4-25);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(---white);
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.mision-vision-card p{
+    text-align: left;
+    font-size: var(--font-16);
+    font-weight: 500;
+    color: var(---p-text);
+    line-height: 25px;
+    width: 450px;
+}
+/* ======================================contact HTML============================== */
+#contact-html{
+    max-width: 100%;
+    height: auto;
+    background: url(img/bg_02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    backdrop-filter: blur(5px);
+   
+}
+#contact-html::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to right,#293445,#293445af);
+    
+}
+.contact-elements{
+    z-index: 1;
+    position: relative;
+    padding: 10% 2%;
+    text-align: left;
+    width: 500px;
+}
+.contact-elements h5{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(---white);
+    margin-bottom: 35px;
+}
+.contact-elements p{
+    width: 440px;
+    font-size: var(--font-16);
+    font-weight: 500;
+    color: var(---p-text);
+    line-height: 25px;
+    
+}
+.contact-content{
+    margin-top: 5%;
+}
+.contact-content .address{
+    border-bottom: 1px solid #ffffff33;
+    padding: 1% 0;
+    margin-bottom: 20px;
+    width: 440px;
+    color: var(---white);
+    font-size: var(--font-14);
+    font-weight: 600;
+
+}
+.contact-content .address:hover{
+    color: var(---red);
+}
+.contact-content .address i{
+    color: var(---red);
+    padding: 0 15px 0 0;
+    font-size: var(--font-16);
+
+}
+.contact-form{
+    position: absolute;
+    top: -80px;
+    right: 5%;
+    z-index: 1;
+    width: 600px;
+    height: auto;
+    background-color: var(---bg-color);
+    padding: 5%;
+    border-radius: 5px;
+}
+.map{
+    width: 100%;
+    padding: 2px;
+}
+
+form{
+    width: 100%;
+ }
+ form .form-card{
+   
+ }
+ form .form-card .input-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ }
+ form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: var(--font-16);
+    color: var(---bg-color);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+ }
+ input:focus, textarea:focus{
+    border: 1px dotted var(---p-text);
+ }
+ form textarea{
+    resize: none;
+ }
+ form label{
+    text-transform: capitalize;
+    font-size: var(---font-16);
+    color: var(---p-text);
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+ }
+
+ .input-btn{
+    display: block;
+    max-width: 50%;
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+    color: var(---white);
+ }
