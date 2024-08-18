@@ -159,7 +159,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 165vh;
+    height: auto;
     width: 100%;
     position: relative;
     
@@ -353,7 +353,7 @@ nav .logo img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 360vh;
+    height: 350vh;
     width: 100%;
     position: relative;
     
@@ -375,7 +375,7 @@ nav .logo img{
     position: absolute;
     max-width: 100%;
     margin: 0 auto;
-    height: auto;
+   height: auto;
     padding: 0 4%;
 }
 .about-us .about-us-container{
@@ -672,7 +672,8 @@ hr{
     line-height: 25px;
     
 }
-.logo-img img{
+.logo-img img,
+.logo-img2 img{
     max-width: 100%;
     height: auto;
  }
@@ -798,6 +799,7 @@ footer{
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+    margin: 5% 0;
 }
 .footer-card img{
     margin-bottom: 30px;
@@ -814,6 +816,7 @@ footer{
     font-weight: 300;
     color: var(---white);
     margin-bottom: 35px;
+    margin-left: 15%;
     
 }
 .footer-card ul{
@@ -913,21 +916,7 @@ footer{
 
 
 }
-.project-bg-content2{
-    position: absolute;
-    display: flex;
-    max-width: 100%;
-    margin:  0 auto;
-    padding: 0 10%;
-    height: auto;
-    justify-content: center;
-    flex-direction: row;
-    align-items:center;
-    gap: 50px;
-    z-index: 1;
-    top: 230%;
 
-}
 .project-bg-content3{
     position: absolute;
     display: flex;
@@ -943,8 +932,8 @@ footer{
     top: 360%;
 
 }
-.project-bg-content .project-content-text{
-    max-width: 40%;
+ .project-content-text{
+    width: 40%;
     height: auto;
     
 }
@@ -1160,8 +1149,9 @@ footer{
     line-height: 25px;
 }
 #gaming-fact{
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    max-width: 0 auto;
+    height: auto;
     background: url(img/bg_04.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1176,7 +1166,7 @@ footer{
     height: 100%;
     top: 0;
     left: 0;
-    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.486));
+    background:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.712));
 }
 .gaming-fact-content{
     margin: 10% 0;
@@ -1198,6 +1188,49 @@ footer{
     color: var(---p-text);
     line-height: 25px;
 }
+
+.counter-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2% 5%;
+    
+    position: relative;
+    z-index: 2;
+    margin:  0 auto;
+    max-width: 100%;
+}
+.counter{
+    background-color:transparent;
+    border: 1px solid rgba(190, 170, 170, 0.178);
+    padding: 3rem;
+    
+}
+.counter .count{
+    font-size: var(--font-h2-55);
+    margin-bottom: 15px;
+    color: var(---red);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+      
+}
+.in{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.in i{
+    font-size: var(--font-h2-55);
+    margin-bottom: 15px;
+    color: var(---red);
+    font-weight: 600;
+}
+.counter p{
+    font-size: var(--font-16);
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 500;
+    color: var(---white);
+}
+
 .conatiner-img{
     max-width: 100%;
     margin:0 auto;
@@ -1264,12 +1297,18 @@ footer{
     background:linear-gradient(to right,#293445,#293445af);
     
 }
+.contact-html-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .contact-elements{
     z-index: 1;
     position: relative;
     padding: 10% 2%;
     text-align: left;
-    width: 500px;
+    max-width: 400px;
+    width: 100%;
+    
 }
 .contact-elements h5{
     font-size: 18px;
@@ -1311,9 +1350,10 @@ footer{
 .contact-form{
     position: absolute;
     top: -80px;
-    right: 5%;
+    right: 3%;
     z-index: 1;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: auto;
     background-color: var(---bg-color);
     padding: 5%;
@@ -1368,3 +1408,6 @@ form{
     font-family: "Zen Dots", sans-serif;
     color: var(---white);
  }
+
+ 
+ 

@@ -25,4 +25,213 @@
         display: none;
         
     }
+    :root{
+    
+        --font-h1-100: 60px;
+        --font-h2-55: 40px;
+        --font-h3-33: 27px;
+        --font-h4-25: 20px;
+        --font-h5-22: 18px;
+        --font-h6: 14px;
+    }
+    .hero-card-container .hero-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+    .about-us .about-us-container{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .about-us-card img{
+        position: absolute;
+        opacity: 0.1;
+        max-width: 100%;
+        top: 5%;
+        left: 0;
+    }
+    #project{
+        padding: 10% 0;
+    }
+}
+
+@media (max-width:580px){
+    .mobile-nav{
+       
+        width: 95%;
+        
+    }
+
+}
+
+@media (max-width:1400px){
+    .container{
+        padding: 2% ;
+        
+    }
+
+}
+@media (max-width:1280px){
+    :root{
+    
+        --font-h1-100: 80px;
+        --font-h2-55: 48px;
+        --font-h3-33: 30px;
+        --font-h4-25: 22px;
+        --font-h5-22: 22px;
+        --font-h6: 14px;
+    }
+    #home-body{
+       
+        height: 280vh;
+     
+    }
+    .aboutHTML-head{
+       
+        height: 100vh;
+        
+    }
+    #about-platform{
+        
+        height: 180vh;
+        
+    }
+    
+}
+@media (max-width:1080px){
+    .hero-card h4{
+        width: 220px;
+    
+    }
+    .hero-container .hero-card{
+        padding: 15.5% 10%; 
+      
+    }
+    .project-img-container{
+        
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .project-bg-content,
+    .project-bg-content2,
+    .project-bg-content3{
+       flex-direction: column;
+    
+    }
+    .project-content-text{
+        width: 100%;
+        margin-top: -10%;
+      
+    }
+    .project-bg-content img,
+    .project-bg-content2 img,
+    .project-bg-content3 img{
+        max-width: 100%;
+        margin-top: -2%;
+    }
+    .counter-wrapper{
+     
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .mision-vision-container{
+       grid-template-columns: 1fr;
+    }
+    .contact-html-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .contact-form{
+        position: relative;
+        max-width: 100%;
+    }
+}
+@media (max-width:760px){
+    .hero-content h1{
+        line-height: 75px;
+        
+    }
+    .about-us h2, 
+    .choose h2,
+    .clients h2,
+    .end-content h2,
+    .about-platform-content h2,
+    .mision-vision-content h2{
+        line-height: 40px;
+    }
+    #home-body{
+       
+        height: 200vh;
+        
+    }
+    .btn{
+        width: 100%;
+    }
+    
+    .project-img-container,
+     .choose-container{
+        
+        grid-template-columns: 1fr;
+
+    }
+    .logo-img img,
+    .logo-img2 img{
+        max-width: 100%;
+        height: 120px;
+     }
+    #logo-img-slide{
+        overflow: hidden;
+        padding: 4% 0%;
+        
+     }
+     .aboutHTML-head{
+       
+        height: 80vh;
+       
+    }
+    .contactHTML-head{
+       
+        height: 50vh;
+       
+    }
+    #about-platform{
+        
+        height: 150vh;    
+    }
+    #about-platform img{
+       
+        top: 5%;
+       
+    }
+    footer{
+        height: 80vh;
+    }
+    .footer-container{
+       
+        flex-direction: column;
+
+    }
+    .footer-card p{
+       
+        width: 100%;
+    }
+    .footer-card h5{
+        margin-left: 0;
+        
+    }
+    .footer-card ul{
+        margin-left: 0%;
+    }
+    :root{
+    
+        --font-h1-100: 55px;
+        --font-h2-55: 32px;
+        --font-h3-33: 24px;
+        --font-h4-25: 18px;
+        --font-h5-22: 16px;
+        --font-h6: 14px;
+    }
+    
+
 }
