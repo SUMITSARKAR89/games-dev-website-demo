@@ -23,10 +23,9 @@
 -  Ask me about `HTML, CSS and JS`.
 
 <br/>
-   https://github.com/SUMITSARKAR89/language-tutor-website/tree/master
+  https://github.com/SUMITSARKAR89/games-dev-website-demo/tree/master
     <br/>
-Demo https://master--earnest-squirrel-22469f.netlify.app/
-
+Demo https://66c1f7afb5731c8da5cdbfb2--sweet-naiad-14de7b.netlify.app/
 <br/>
 <img src="img/s1.jpeg" alt="">
 <img src="img/s2.jpeg" alt="">
